@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
           s.source              = { :git => "https://github.com/dhadseamit/ChatUIFramework.git", :tag => "1.0.0" }
           #9.
           s.source_files     = "ChatUIFramework", "ChatUIFramework/**/*.{h,m,swift}"
+          s.resource_bundles = "ChatUIFramework", "ChatUIFramework/**/*.{xib}"
+          
     end
