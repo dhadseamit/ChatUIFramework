@@ -24,7 +24,8 @@ class ChatView: UIView {
     }
 
     func commonInitilize(){
-        Bundle.main.loadNibNamed("ChatView", owner: self, options: nil)
+        let bundle = Bundle(for: ChatView.self)
+        bundle.loadNibNamed("ChatView", owner: self, options: nil)
         self.addSubview(TestView)
     }
 }
