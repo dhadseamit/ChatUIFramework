@@ -24,11 +24,7 @@ class ChatView: UIView {
     }
 
     func commonInitilize(){
-       
         Bundle.main.loadNibNamed("ChatView", owner: self, options: nil)
-        addSubview(TestView)
-        TestView.frame = self.bounds
-        TestView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        self.addSubview(TestView)
     }
- 
 }
